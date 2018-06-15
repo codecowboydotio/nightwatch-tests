@@ -4,7 +4,7 @@ module.exports = {
 
   'Test scotts web app' : function (client) {
     client
-      .url('http://fedora:8080/helloworld')
+      .url('http://localhost:8080/helloworld')
       .pause(1000);
 
     client.expect.element('title').to.be.present;
